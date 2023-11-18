@@ -1,0 +1,147 @@
+.services {
+  position: relative;
+  .services__line {
+    display: block;
+    width: 984px;
+    height: 15px;
+    background-color: $services-line-color;
+    border-radius: 15px;
+    position: absolute;
+    left: -10px;
+    top: 202px;
+    z-index: -1;
+  }
+
+  .services__wrapper {
+    padding-top: 160px;
+    padding-bottom: 70px;
+  }
+
+  .services__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .services__list-item {
+    max-width: 350px;
+
+    &__icon {
+      width: 96px;
+      height: 96px;
+      margin-bottom: 40px;
+      cursor: pointer;
+      border: 3px solid transparent;
+      border-radius: 50%;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        border: 3px solid;
+        border-color: $services-text-color;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    .services__list-content {
+      &__title {
+        color: $services-title-color;
+        font-family: "Space Mono", Arial, monospace;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -1.071px;
+        margin-bottom: 27px;
+      }
+
+      &__text {
+        color: $services-text-color;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 980px) {
+    .services__line {
+      height: 623px;
+      width: 15px;
+      left: 100px;
+      top: -10px;
+    }
+
+    .services__list {
+      flex-direction: column;
+      margin-right: 210px;
+    }
+
+    .services__list-item {
+      display: flex;
+      align-items: start;
+      max-width: 578px;
+      gap: 80px;
+
+      &__icons {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .services__list {
+      margin-right: 100px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .services__list {
+      margin-right: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .services__list {
+      margin-right: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .services__list {
+      margin-right: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .services__wrapper {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .services__line {
+      display: none;
+    }
+    .services__list {
+    }
+
+    .services__list-item {
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+
+      &__icon {
+        width: 76px;
+        height: 76px;
+      }
+    }
+    .services__list-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__title {
+        text-align: center;
+      }
+
+      &__text {
+        text-align: center;
+      }
+    }
+  }
+}
