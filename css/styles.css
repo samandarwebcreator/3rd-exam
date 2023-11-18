@@ -226,7 +226,7 @@ body::-webkit-scrollbar-thumb {
 }
 .hero .hero__rounds {
   position: absolute;
-  right: -19px;
+  right: 0px;
   bottom: 237px;
 }
 .hero .hero__button-link {
@@ -502,5 +502,105 @@ body::-webkit-scrollbar-thumb {
   }
   .services .services__list-content__text {
     text-align: center;
+  }
+}
+
+.utilize .utilize__wrapper {
+  padding-top: 70px;
+  padding-bottom: 178px;
+  position: relative;
+}
+.utilize .utilize__inner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 200px;
+}
+.utilize .utilize__inner-wrapper:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.utilize .utilize__inner-wrapper:last-child {
+  padding-bottom: 0;
+}
+.utilize .utilize__content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  max-width: 445px;
+  padding-left: 10px;
+}
+.utilize .utilize__title {
+  color: #495567;
+  font-family: "Space mono", Arial, monospace;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+  margin-bottom: 24px;
+}
+.utilize .utilize__text {
+  color: #939caa;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+.utilize .utilize__link {
+  font-family: "Space mono", Arial, monospace;
+  color: white;
+  background-color: #fcb72b;
+  padding: 14px 39px;
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+.utilize .utilize__link:hover {
+  color: #fcb72b;
+  border: 2px solid #fcb72b;
+  transition: all 0.4s ease-in-out;
+  background-color: transparent;
+}
+.utilize .utilize__image-box {
+  width: 449px;
+  height: 449px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.utilize .utilize__image {
+  width: 449px;
+  height: 449px;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+.utilize .utilize__image:hover {
+  transform: scale(1.09);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+@media only screen and (max-width: 950px) {
+  .utilize .utilize__inner-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .utilize .utilize__inner-wrapper:nth-child(odd) {
+    flex-direction: column;
+  }
+  .utilize .utilize__content {
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .utilize .utilize__image-box {
+    width: 300px;
+    height: 300px;
+  }
+  .utilize .utilize__image {
+    width: 300px;
+    height: 300px;
   }
 }/*# sourceMappingURL=styles.css.map */
