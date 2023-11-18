@@ -1,0 +1,148 @@
+.hero {
+  .hero__bg {
+    background-image: linear-gradient($hero-bg-color, $hero-bg-color),
+      url(../../assets/images/Bitmap.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-color: black;
+  }
+
+  .hero__wrapper {
+    padding: 152px 20px;
+  }
+
+  .hero__content {
+    max-width: 509px;
+  }
+  .hero__title {
+    max-width: 500px;
+    color: #fff;
+    font-family: "Space Mono", Arial, sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px; /* 100% */
+    letter-spacing: -2.5px;
+    margin-bottom: 40px;
+  }
+
+  .hero__text {
+    max-width: 405px;
+    color: #fff;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 25px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+  }
+
+  .hero__line {
+    position: absolute;
+    left: -20px;
+    bottom: 340px;
+    display: block;
+    width: 203px;
+    height: 10px;
+  }
+
+  .hero__indicator {
+    width: 406px;
+    height: 99px;
+    position: absolute;
+    right: 300px;
+    bottom: 250px;
+  }
+
+  .hero__rounds {
+    position: absolute;
+    right: -19px;
+    bottom: 237px;
+  }
+  .hero__button-link {
+    @include brand-button();
+  }
+  .hero__button-link {
+    @include brand-button();
+  }
+
+  @media only screen and (max-width: 1360px) {
+    .hero__bg {
+      background-position: center center;
+    }
+    .hero__wrapper {
+      .hero__line {
+        bottom: 320px;
+        width: 150px;
+        left: -100px;
+      }
+
+      .hero__indicator {
+        width: 306px;
+        height: 89px;
+        bottom: 240px;
+        right: 325px;
+      }
+
+      .hero__text {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .hero__bg {
+      background-position: center center;
+    }
+    .hero__wrapper {
+      .hero__line {
+        bottom: 365px;
+        width: 150px;
+        left: -100px;
+      }
+
+      .hero__indicator {
+        width: 306px;
+        height: 89px;
+        bottom: 270px;
+        right: 325px;
+      }
+
+      .hero__rounds {
+        bottom: 260px;
+      }
+
+      .hero__text {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1120px) {
+    .hero__bg {
+      background-position: center center;
+    }
+    .hero__wrapper {
+      .hero__line {
+        bottom: 180px;
+        width: 150px;
+        left: -100px;
+      }
+
+      .hero__indicator {
+        width: 306px;
+        height: 89px;
+        bottom: 100px;
+        right: 325px;
+      }
+
+      .hero__rounds {
+        bottom: 100px;
+      }
+
+      .hero__text {
+        margin-left: 50px;
+      }
+    }
+  }
+}
