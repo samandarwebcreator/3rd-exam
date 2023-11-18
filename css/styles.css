@@ -171,6 +171,7 @@ body {
   background-color: black;
 }
 .hero .hero__wrapper {
+  display: flex;
   padding: 152px 20px;
 }
 .hero .hero__content {
@@ -285,6 +286,7 @@ body {
   }
   .hero .hero__wrapper .hero__rounds {
     bottom: 260px;
+    right: 0px;
   }
   .hero .hero__wrapper .hero__text {
     margin-left: 50px;
@@ -294,21 +296,72 @@ body {
   .hero .hero__bg {
     background-position: center center;
   }
-  .hero .hero__wrapper .hero__line {
-    bottom: 180px;
-    width: 150px;
-    left: -100px;
+  .hero .hero__wrapper {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 300px;
   }
-  .hero .hero__wrapper .hero__indicator {
-    width: 306px;
-    height: 89px;
-    bottom: 100px;
-    right: 325px;
+  .hero .hero__wrapper .hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  .hero .hero__wrapper .hero__rounds {
-    bottom: 100px;
+  .hero .hero__wrapper .hero__title {
+    max-width: 573px;
+    text-align: center;
+    letter-spacing: -2.5px;
+    font-size: 59px;
   }
   .hero .hero__wrapper .hero__text {
-    margin-left: 50px;
+    text-align: center;
+    max-width: 573px;
+    margin-left: 0px;
+    font-size: 18px;
+  }
+  .hero .hero__wrapper .hero__line {
+    display: none;
+  }
+  .hero .hero__wrapper .hero__indicator {
+    width: 336px;
+    height: 109px;
+    bottom: 90px;
+    left: -2px;
+  }
+  .hero .hero__wrapper .hero__rounds {
+    bottom: 90px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .hero .hero__bg {
+    background-position: right center;
+  }
+  .hero .hero__wrapper {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 300px;
+  }
+  .hero .hero__wrapper .hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .hero .hero__wrapper .hero__title {
+    max-width: 311px;
+    font-size: 40px;
+  }
+  .hero .hero__wrapper .hero__text {
+    max-width: 311px;
+    font-size: 15px;
+  }
+  .hero .hero__wrapper .hero__indicator {
+    width: 436px;
+    height: 159px;
+    bottom: 10px;
+    left: -280px;
+  }
+  .hero .hero__wrapper .hero__rounds {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
